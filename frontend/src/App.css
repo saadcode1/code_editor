@@ -1,4 +1,10 @@
-/* Center the login box on the screen */
+/* Retaining styles for the login page */
+
+body{
+   margin: 0;
+   padding: 0;
+  
+}
 .login-container {
   display: flex;
   justify-content: center;
@@ -7,7 +13,6 @@
   background-color: #f0f0f0;
 }
 
-/* Styling the login box */
 .login-box {
   background-color: #ffffff;
   padding: 20px;
@@ -47,7 +52,6 @@
   background-color: #45a049;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .login-box {
     padding: 15px;
@@ -60,5 +64,98 @@
 
   .login-box button {
     font-size: 14px;
+  }
+}
+
+/* Updated styles for the chat room */
+.chat-room {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 30vh;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-room-header {
+  margin-bottom: 10px;
+}
+
+.chat-room-header h1 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #1abc9c;
+}
+
+.chat-room-header p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #bdc3c7;
+}
+
+.chat-room-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.chat-room-content h2 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.chat-room-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.chat-room-content ul li {
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #34495e;
+}
+
+.chat-room-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.chat-room-actions select {
+  padding: 5px;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.chat-room-actions button {
+  padding: 8px 12px;
+  margin-right: 14px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.chat-room-actions button:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .chat-room {
+    height: 40vh;
+    font-size: 0.9rem;
   }
 }
