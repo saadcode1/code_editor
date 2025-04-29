@@ -5,7 +5,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Editor from "@monaco-editor/react";
 
-const socket = io("http://localhost:3000");
+const socket = io("https://code-editor-backend-rera.onrender.com");
+
 
 function App() {
   const [editor, setEditor] = useState(false);
